@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even & Odd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <form action="#" onsubmit="addnum()">
+       <h1>Enter Roll No</h1>
+<input type="number" id="addrollno" placeholder="entr roll no">
+<button>add</button>
+</form>
+
+<p id="check"></p>
+
+<button onclick="arrange()">Arrange</button>
+
+<p id="odd"></p>
+<h1>Odd no:</h1>
+<p id="even"></p>
+<h1>Even no:</h1>
+
+    <!-- <script src="abh.js"></script> -->
+
+    <script>
+let arr=[];
+let odd=[];
+let even=[];
+
+
+function addnum(){
+    var addnum = document.getElementById("addrollno").value;
+    arr.push(addnum)
+    document.getElementById("check").innerHTML=arr;
+    document.getElementById("addrollno").value="";
+
+
+
+}
+function arrange(){
+     for( i = 0 ; i <arr.length ;i ++){
+         if(arr [i] % 2==0){
+             odd.push(arr[i])
+             document.getElementById("odd").innerHTML=odd;
+         }
+         else{
+             even.push(arr[i])
+             document.getElementById("even").innerHTML=even;
+         }
+     }
+ }
+    </script>
+</body>
+</html>
