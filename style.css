@@ -1,0 +1,13 @@
+.main{
+    border: 2px solid black;
+    width: 60%;
+    height: 300px;
+ background-image: url(v462-n-130-textureidea_1.jpg);
+ color: cornsilk;
+  text-align: center;
+}
+button{
+    /* width: 10%;
+    height: 20px; */
+    background-color: rgb(139, 139, 226);
+}
